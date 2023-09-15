@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Resultado</title>
+</head>
+<body>
+    <h1>Resultados</h1>
+    {% if total >= 60 %}
+    <h2>aprovado</h2>
+    {% elif total >= 40 %}
+    <h2>Recuperação</h2>
+    {% else %}
+    <h2>Reprovado</h2>
+    {% endif %}
+</body>
+</html>

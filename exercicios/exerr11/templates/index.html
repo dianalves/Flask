@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Session</h1>
+    {% if username != '' %}
+    <p>Username logado: {{username}}</p>
+    <p>Caso deseja sair <a href="/logout">logout</a></p>
+    {% else %}
+    <p>Você não está logado!</p>
+    <p>Clique no link da tela de login <a href="/login">Login</a></p>
+    {% endif %}
+</body>
+</html>
